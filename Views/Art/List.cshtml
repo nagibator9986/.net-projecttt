@@ -1,0 +1,9 @@
+﻿@model ArtsListViewModel
+
+
+<h1>@Model.CurrentCategory</h1>
+
+@foreach (var art in Model.Arts)
+{
+    <partial name="_ArtCard" model="art"/>
+}
